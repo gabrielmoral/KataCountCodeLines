@@ -10,7 +10,7 @@ public class CodeLines {
 		
 		LineList lineList = new LineList(file);
 				
-		return lineList.size();
+		return lineList.CountCodeLines();
 	}
 
 }

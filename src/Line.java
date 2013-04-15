@@ -8,20 +8,12 @@ public class Line {
 		this.line = line;
 	}
 	
-	public Boolean IsSimpleComment()
+	public Boolean IsCodeLine()
 	{
-		return line.startsWith("//");	
-	}
-	
-	public Boolean IsMultipleComment()
-	{
-		if(line.startsWith("/*") || line.startsWith("*") || line.endsWith("*/"))
+		if(line.startsWith("//") || line.startsWith("/*") || line.startsWith("*") || line.endsWith("*/"))
 		{
-			return true;	
-		}
-		return false;
-	}
-	/*
-	 *
-	 */
+			return false;	
+		}	
+		return true;
+	}	
 }
